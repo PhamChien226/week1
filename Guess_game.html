@@ -1,0 +1,42 @@
+<p id="message">Please type any number</p>
+<input type="number" id="number" />
+<button id="guessButton">Guess</button>
+<p id="partNumber">Part Guesses:</p>
+
+
+<script>
+    var min = 1;
+    var max = 100;
+    var yourRandomNumber = Math.ceil(Math.random() * (max - min)) + min;
+    console.log(yourRandomNumber);
+    var partGuesses = "Part Guesses:" + "<br>";
+    var count = 10;
+
+    let userGuess = "";
+    let button = document.getElementById('guessButton');
+    button.addEventListener('click', function () {
+        if (count == 0) {
+            alert("Sorry!. You are out of guess. The correct answer is " + yourRandomNumber + " \n Try again!");
+            location.reload();
+        }
+
+        userGuess = document.getElementById('number').value;
+        count--;
+        if (userGuess == yourRandomNumber) {
+            document.getElementById('message').innerHTML = "Congratulation! " + userGuess 
+                + " was the correct answer! It took you " + (10 - count) + " tries to guess the answer"
+            document.getElementById('message').style.backgroundColor = "green"
+        }
+        if (userGuess < yourRandomNumber) {
+            document.getElementById("message").innerHTML = "Sorry your guess to low. You have " + count + " guesses left"
+            document.getElementById('message').style.backgroundColor = "red"
+        }
+        if (userGuess > yourRandomNumber) {
+            document.getElementById('message').style.backgroundColor = "red"
+            document.getElementById('message').innerHTML = "Sorry your guess to high"
+        }
+        partGuesses += (10 - count) + " : " + userGuess + "<br>";
+        document.getElementById('partNumber').innerHTML = partGuesses
+
+    });
+</script>
