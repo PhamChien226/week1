@@ -11,7 +11,7 @@ Completed user stories:
  * [x] Optional: Show user's past guesses
  * [x] Optional: Change message container color
  * [x] Optional: Limit person to 10 guesses, show many guesses remaining.
-![Video Walkthrough](https://gph.is/g/4o6D5GJ)
+![Video Walkthrough](https://media.giphy.com/media/JpYnqAnAyLj29NQv5f/giphy.gif)
  
   
   
