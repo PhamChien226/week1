@@ -11,7 +11,12 @@ Completed user stories:
  * [x] Optional: Show user's past guesses
  * [x] Optional: Change message container color
  * [x] Optional: Limit person to 10 guesses, show many guesses remaining.
+ 
+ **Walkthrough of all user stories:**
+ 
 ![Video Walkthrough](https://media.giphy.com/media/JpYnqAnAyLj29NQv5f/giphy.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
  
   
   
