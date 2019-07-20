@@ -1,7 +1,22 @@
-<p id="message">Please type any number</p>
-<input type="number" id="number" />
-<button id="guessButton">Guess</button>
-<p id="partNumber">Part Guesses:</p>
+<div class="noidung">
+        <p id="message">Please type any number</p>
+        <input type="number" id="number" />
+        <button id="guessButton">Guess</button>
+        <p id="partNumber">Part Guesses:</p>
+</div>
+
+<style>
+    .noidung {
+        margin: auto;
+        justify-content: center;
+        width: 300px;
+    }
+    p{
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+</style>
 
 
 <script>
@@ -16,7 +31,7 @@
     let button = document.getElementById('guessButton');
     button.addEventListener('click', function () {
         if (count == 0) {
-            alert("Sorry!. You are out of guess. The correct answer is " + yourRandomNumber + " \n Try again!");
+            alert("Sorry! You are out of guess. The correct answer is " + yourRandomNumber + " \n Try again!");
             location.reload();
         }
 
@@ -33,7 +48,7 @@
         }
         if (userGuess > yourRandomNumber) {
             document.getElementById('message').style.backgroundColor = "red"
-            document.getElementById('message').innerHTML = "Sorry your guess to high"
+            document.getElementById('message').innerHTML = "Sorry your guess to high. You have " + count + " guesses left"
         }
         partGuesses += (10 - count) + " : " + userGuess + "<br>";
         document.getElementById('partNumber').innerHTML = partGuesses
