@@ -16,7 +16,7 @@ Completed user stories:
  
 ![Video Walkthrough](https://media.giphy.com/media/JpYnqAnAyLj29NQv5f/giphy.gif)
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [GIFMAKER](https://play.google.com/store/apps/details?id=com.media.zatashima.studio).
  
   
   
